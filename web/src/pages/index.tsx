@@ -14,6 +14,7 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
       },
     };
   } else {
+    console.log(session);
     return {
       redirect: {
         destination: "/app",
